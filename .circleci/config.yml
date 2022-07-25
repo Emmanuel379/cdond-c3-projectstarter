@@ -29,6 +29,7 @@ jobs:
             cd frontend
             npm install
             npm run build
+            npm update
             npm audit fix
             exit 1
       - save_cache:
@@ -48,6 +49,7 @@ jobs:
             cd frontend
             npm install
             npm run build
+            npm update
             npm audit fix
              exit 1
       - save_cache:
